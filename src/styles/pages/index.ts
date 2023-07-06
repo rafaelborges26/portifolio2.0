@@ -35,12 +35,30 @@ export const Profile = styled.main`
     justify-content: center;
     height: 40rem;
     width: inherit;
-    
+`
+
+
+export const DescriptionContainer = styled.div`
+    flex: 0.7;
+    height: inherit;
+    display: flex;
+    align-items: flex-start;
+    justify-content: center;
+    flex-direction: column;
     
     h1 {
         font-size: 4rem;
         color: ${Themes.colors.white};
-        flex: 0.7;
+    }
+
+    span:first-of-type {
+        margin-top: 1rem;
+    }
+
+    span {
+        font-size: 1.25rem;
+        font-weight: 700;
+        color: ${Themes.colors.gray};
     }
 `
 
@@ -56,3 +74,5 @@ export const ImageContainer = styled.div`
         border-radius: 50%;
     }
 `;
+
+export const Experiences = styled.div``
