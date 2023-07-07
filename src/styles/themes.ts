@@ -8,6 +8,7 @@ export const Themes = {
         green: '#114B5F',
         pink: '#F45B69',
         gray: '#95B3B9',
-        melon: '#ECACA5'
+        melon: '#ECACA5',
+        black: '#252422'
     }
 }

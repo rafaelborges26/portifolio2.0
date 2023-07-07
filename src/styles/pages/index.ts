@@ -2,6 +2,11 @@ import styled from "styled-components";
 import { Themes } from '@/styles/themes'
 
 export const Container = styled.div`
+    max-width: 1700px;
+    margin: auto;
+`
+
+export const Content = styled.div`
     display: flex;
     align-items: center;
     justify-content: flex-start;
@@ -66,13 +71,14 @@ export const ImageContainer = styled.div`
     flex: 0.3;
     display: flex;
     align-items: center;
-    justify-content: center;
+    justify-content: flex-end;
 
     img {
-        height: 200px;
-        width: 200px;
+        height: 250px;
+        width: 250px;
         border-radius: 50%;
     }
 `;
 
-export const Experiences = styled.div``
+export const ExperiencesContainer = styled.div`
+`
