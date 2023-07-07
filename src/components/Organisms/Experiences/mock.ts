@@ -55,8 +55,4 @@ export const experiences = [{
     labels: ['Typescript', 'React', 'Next.js', 'Node.js'],
     logo: IconBmg,
     logoDescription: 'Bmg'
-},
-
-
-
-]
+}]

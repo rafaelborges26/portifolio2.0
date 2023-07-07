@@ -74,8 +74,8 @@ export const ImageContainer = styled.div`
     justify-content: flex-end;
 
     img {
-        height: 250px;
-        width: 250px;
+        height: 15.625rem;
+        width: 15.625rem;
         border-radius: 50%;
     }
 `;

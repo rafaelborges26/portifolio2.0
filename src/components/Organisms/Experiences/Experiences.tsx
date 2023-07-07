@@ -1,6 +1,4 @@
 import Image from 'next/image'
-//import { ILogo } from './interfaces'
-import IconBmg from '@/assets/icons/bmg.svg'
 import { Container } from './styles'
 import { Card } from '@/components/Molecules'
 import { experiences } from './mock'
