@@ -20,6 +20,7 @@ export const Title = styled.h6`
 export const Description = styled.p`
     font-size: 1rem;
     margin-bottom: 2rem;
+    text-align: center;
 `
 
 export const ContainerLabel = styled.div`

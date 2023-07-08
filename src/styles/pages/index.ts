@@ -38,7 +38,7 @@ export const Profile = styled.main`
     display: flex;
     align-items: center;
     justify-content: center;
-    height: 40rem;
+    height: 44rem;
     width: inherit;
 `
 
@@ -80,5 +80,19 @@ export const ImageContainer = styled.div`
     }
 `;
 
-export const ExperiencesContainer = styled.div`
+export const ExperiencesContainer = styled.div``
+
+export const AboutMe = styled.div`
+    margin-top: 12rem;
+
+    h3 {
+        font-size: 2rem;
+        font-weight: 600;
+        margin-bottom: 2rem;
+    }
+
+    p {
+        font-size: 1.5rem;
+        padding-bottom: 2rem;
+    }
 `

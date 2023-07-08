@@ -11,5 +11,11 @@ export default createGlobalStyle`
 body {
     background: #094074;
     padding: 2rem;
+    color: #E4FDE1;
+}
+
+h2 {
+    font-size: 1.4rem;
+    margin-bottom: 2.5rem;
 }
 `

@@ -2,6 +2,9 @@ import styled from 'styled-components'
 import { Themes } from '@/styles/themes'
 
 export const Container = styled.div`
+`
+
+export const Content = styled.div`
     display: flex;
     flex-direction: row;
     align-items: center;
