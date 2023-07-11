@@ -1,18 +1,17 @@
 import Image from 'next/image'
 import ImageProfile from '@/assets/images/profile2.jpg'
-import { Container, Content, Header, ButtonHeader, Profile, DescriptionContainer, ImageContainer, ExperiencesContainer, AboutMe } from '../styles/pages'
+import { Menu } from '@/components/Atoms'
+import { Header } from '@/components/Molecules'
 import { Experiences } from '@/components/Organisms'
+import { Container, Content, ButtonHeader, Profile, DescriptionContainer, ImageContainer, ExperiencesContainer, AboutMe } from '../styles/pages'
+
+
 export default function Home() {
 
   return (
       <Container>
         <Content>
-          <Header>
-            <ButtonHeader>
-              Rafael Borges
-            </ButtonHeader>
-            <p>Menu</p>
-          </Header>
+          <Header/>
           <Profile>
           <DescriptionContainer>
             <h1>
