@@ -1,7 +1,4 @@
 export interface IMenu {
+    positionTop?: boolean
     isOpen: boolean
-}
-
-export interface IScratcht {
-    positionTop: boolean
 }

@@ -8,7 +8,7 @@ export const Header = () => {
     return (
         <Container>
             <Button variant='label'>Rafael Borges</Button>
-            <Menu isOpen={true} />
+            <Menu />
         </Container>
     )
 }

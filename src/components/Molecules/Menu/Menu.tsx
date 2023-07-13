@@ -1,17 +1,22 @@
+import { useState } from 'react'
 import { Tab } from '@/components/Atoms'
-import { IMenu } from './interfaces'
 import { MenuContainer, Scratchs, Scratcht, ContainerMenu } from './styles'
 
-export const Menu = ( { isOpen }:IMenu) => {
+export const Menu = () => {
+    const [isOpen, setIsOpen] = useState(false)
+    
+    const handleOpenMenu = () => {
+        setIsOpen(!isOpen)
+    }
     return (
         <>
-        <MenuContainer>
-            <Scratchs>
-                <Scratcht positionTop={true} />
-                <Scratcht positionTop={false} />
+        <MenuContainer onClick={handleOpenMenu} isOpen={isOpen} >
+            <Scratchs isOpen={isOpen}>
+                <Scratcht positionTop={true} isOpen={isOpen} />
+                <Scratcht positionTop={false} isOpen={isOpen} />
             </Scratchs>
         </MenuContainer>
-        <ContainerMenu isOpen={true}>
+        <ContainerMenu isOpen={isOpen}>
             <Tab>Teste</Tab>
         </ContainerMenu>
         </>

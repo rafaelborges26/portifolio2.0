@@ -9,7 +9,7 @@ export const Container = styled.div`
     max-width: 20rem;
     border-radius: 2rem;
     background: ${Themes.colors.black};
-    color: ${Themes.colors.white};
+    color: ${Themes.colors.white600};
 `
 
 export const Title = styled.h6`

@@ -29,7 +29,7 @@ export const Header = styled.header`
 export const ButtonHeader = styled.button`
     background: transparent;
     border: none;
-    color: ${Themes.colors.white};
+    color: ${Themes.colors.white600};
 
     font-size: 1.5rem;
     font-weight: 600;
@@ -54,7 +54,7 @@ export const DescriptionContainer = styled.div`
     
     h1 {
         font-size: 4rem;
-        color: ${Themes.colors.white};
+        color: ${Themes.colors.white600};
     }
 
     span:first-of-type {
@@ -64,7 +64,7 @@ export const DescriptionContainer = styled.div`
     span {
         font-size: 1.25rem;
         font-weight: 700;
-        color: ${Themes.colors.gray};
+        color: ${Themes.colors.gray300};
     }
 `
 

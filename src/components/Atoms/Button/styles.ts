@@ -7,7 +7,7 @@ export const Container = styled.button<IButtonStyles>`
     border: none;
     
     ${props => props.variant === 'label' && css`
-    color: ${Themes.colors.white};
+    color: ${Themes.colors.white600};
 
     font-size: 1.5rem;
     font-weight: 600;
@@ -15,6 +15,6 @@ export const Container = styled.button<IButtonStyles>`
 
     ${props => props.variant === 'primary' && css`
         color: ${Themes.colors.blue900};
-        background-color: ${Themes.colors.white};
+        background-color: ${Themes.colors.white600};
     `};
 `

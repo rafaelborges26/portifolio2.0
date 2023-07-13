@@ -8,12 +8,12 @@ export const Container = styled.span<ILabelStyles>`
     font-size: 0.75rem;
 
     ${props => props.colorSelected === 'blue' && css`
-        color: ${Themes.colors.white};
+        color: ${Themes.colors.white600};
         background-color: ${Themes.colors.blue900};
     `};
 
     ${props => props.colorSelected === 'white' && css`
         color: ${Themes.colors.blue900};
-        background-color: ${Themes.colors.white};
+        background-color: ${Themes.colors.white600};
     `};
 `
