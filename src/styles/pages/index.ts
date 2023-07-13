@@ -4,6 +4,7 @@ import { Themes } from '@/styles/themes'
 export const Container = styled.div`
     max-width: 1700px;
     margin: auto;
+    height: 100%;
 `
 
 export const Content = styled.div`

@@ -1,8 +1,10 @@
 import Image from 'next/image'
-import { Button, Menu } from '@/components/Atoms'
+import { Button } from '@/components/Atoms'
+import { Menu } from '@/components/Molecules'
+
 import { Container } from './styles'
 
-const Header = () => {
+export const Header = () => {
     return (
         <Container>
             <Button variant='label'>Rafael Borges</Button>
@@ -10,5 +12,3 @@ const Header = () => {
         </Container>
     )
 }
-
-export default Header

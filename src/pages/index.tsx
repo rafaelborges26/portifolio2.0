@@ -1,8 +1,6 @@
 import Image from 'next/image'
 import ImageProfile from '@/assets/images/profile2.jpg'
-import { Menu } from '@/components/Atoms'
-import { Header } from '@/components/Molecules'
-import { Experiences } from '@/components/Organisms'
+import { Experiences, Header } from '@/components/Organisms'
 import { Container, Content, ButtonHeader, Profile, DescriptionContainer, ImageContainer, ExperiencesContainer, AboutMe } from '../styles/pages'
 
 

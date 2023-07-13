@@ -48,12 +48,14 @@ export const Scratcht = styled.div<IScratcht>`
 export const ContainerMenu = styled.div<IMenu>`
   display: none;
   position: absolute;
+  top: 0;
   right: 0;
   z-index: 1;
   ${props => props.isOpen && css`
         display: flex;
+        align-items: center;
   `};
-  width: 400px;
-  height: 400px;
-  background: red;
+  width: 30%;
+  height: 100%;
+  background: ${Themes.colors.blue600};
 `

@@ -1,3 +1,4 @@
+import { Tab } from '@/components/Atoms'
 import { IMenu } from './interfaces'
 import { MenuContainer, Scratchs, Scratcht, ContainerMenu } from './styles'
 
@@ -11,7 +12,7 @@ export const Menu = ( { isOpen }:IMenu) => {
             </Scratchs>
         </MenuContainer>
         <ContainerMenu isOpen={true}>
-            Conteudo
+            <Tab>Teste</Tab>
         </ContainerMenu>
         </>
     )
