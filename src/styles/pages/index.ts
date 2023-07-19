@@ -1,6 +1,12 @@
 import styled from "styled-components";
 import { Themes } from '@/styles/themes'
 
+export const Layer = styled.div`
+width: 100vw;
+height: 100vh;
+background: red;
+`;
+
 export const Container = styled.div`
     max-width: 1700px;
     margin: auto;

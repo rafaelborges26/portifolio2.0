@@ -1,26 +1,20 @@
 import { css, styled } from "styled-components"
 import { Themes } from "@/styles/themes"
-import { IMenu } from './interfaces'
+import { IMenuStyles } from './interfaces'
 
-export const MenuContainer = styled.div<IMenu>`
+export const MenuContainer = styled.div<IMenuStyles>`
   display: flex;
   align-items: center;
   position: relative;
-  z-index: 2;
-  width: 26px;
+  z-index: 4;
+  width: 26px; 
   height: 40px;
   cursor: pointer;
   transition: all 0.25s ease;
-
-  :hover {
-    background: ${Themes.colors.gray900};
-    div {
-      background: ${Themes.colors.gray900}; 
-    }
-  }
+  
 `
 
-export const Scratchs = styled.div<IMenu>`
+export const Scratchs = styled.div<IMenuStyles>`
   position: relative;
   align-items: center;
   opacity: 1;
@@ -34,7 +28,7 @@ export const Scratchs = styled.div<IMenu>`
   `};
 `
 
-export const Scratcht = styled.div<IMenu>`
+export const Scratcht = styled.div<IMenuStyles>`
   position: absolute;
   z-index: 2;
   display: block;
@@ -44,6 +38,7 @@ export const Scratcht = styled.div<IMenu>`
   height: 4px;
   background: ${Themes.colors.white600};
   transition: all 0.25s ease;
+
 
   ${props => props.positionTop && css`
         top: -10px; 
@@ -64,22 +59,52 @@ export const Scratcht = styled.div<IMenu>`
   `};
 `
 
-export const ContainerMenu = styled.div<IMenu>`
-  //display: none;
+export const ContainerMenu = styled.div<IMenuStyles>`
   position: absolute;
   top: 0;
   right: 0;
   z-index: 1;
   width: 0%;
   transition: all 0.25s ease;
+  background: ${Themes.colors.blue600};
+  z-index: 3;
 
   height: 100%;
-  display: flex;
-  align-items: center;
-  
-  background: ${Themes.colors.blue600};
 
   ${props => props.isOpen && css`
         width: 30%;
   `};
+`
+
+export const ContainerButton = styled.div<IMenuStyles>`
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-direction: column;
+  height: inherit;
+
+  ${props => props.isOpen && css`
+      display: flex;
+  `};
+
+  ${props => !props.isOpen && css`
+      display: none;
+  `};
+`
+
+export const NavLayer = styled.div<IMenuStyles>`
+position: fixed;
+    background: rgb(0 0 0 / 60%);
+    bottom: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    z-index: 2;
+    //-webkit-backface-visibility: hidden;
+    //backface-visibility: hidden;
+    visibility: ${(props) => props.isOpen ? 'visible' : 'hidden'};
+    overflow: hidden;
+    opacity: 1;
+    //-webkit-transition: all 0.25s;
+    transition: all 0.25s;
 `
