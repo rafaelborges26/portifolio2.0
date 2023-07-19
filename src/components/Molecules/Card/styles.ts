@@ -7,6 +7,7 @@ export const Container = styled.div`
     align-items: center;
     padding: 2rem;
     max-width: 20rem;
+    height: 26rem;
     border-radius: 2rem;
     background: ${Themes.colors.black};
     color: ${Themes.colors.white600};
