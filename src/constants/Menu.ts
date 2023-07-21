@@ -1,5 +1,5 @@
 export const MenuItems = {
-    PROFILE: 'profile',
-    EXPERIENCES: 'experiences',
-    ABOUTME: 'aboutMe'
+    PROFILE: 'Profile',
+    EXPERIENCES: 'Experiences',
+    ABOUTME: 'AboutMe'
 }

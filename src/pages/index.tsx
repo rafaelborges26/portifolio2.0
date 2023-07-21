@@ -1,5 +1,6 @@
 import Image from 'next/image'
 import ImageProfile from '@/assets/images/profile2.jpg'
+import { MenuItems } from '@/constants/Menu'
 import { Experiences, Header } from '@/components/Organisms'
 import { Container, Content, ButtonHeader, Profile, DescriptionContainer, ImageContainer, ExperiencesContainer, AboutMe } from '../styles/pages'
 
@@ -10,7 +11,7 @@ export default function Home() {
       <Container>
         <Content>
           <Header/>
-          <Profile>
+          <Profile id={MenuItems.PROFILE}>
           <DescriptionContainer>
             <h1>
               Hello, I’m Rafael Borges
@@ -22,10 +23,10 @@ export default function Home() {
               <Image src={ImageProfile} alt="Rafael Borges" />
             </ImageContainer>
           </Profile>
-          <ExperiencesContainer id="experiences">
+          <ExperiencesContainer id={MenuItems.EXPERIENCES}>
             <Experiences />
           </ExperiencesContainer>
-          <AboutMe>
+          <AboutMe id={MenuItems.ABOUTME}>
             <h2>About me</h2>
             <h3>I work with what I love</h3>
             <p>{`I´m a coding enthusiast looking for continued growth. Since 2016, I have dedicated myself to constantly learning and improving myself. From 2018, I started working and looking for excellent solutions to solve problems efficiently.`}</p>

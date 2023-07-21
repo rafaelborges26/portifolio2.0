@@ -6,8 +6,7 @@ import { MenuContainer, Scratchs, Scratcht, ContainerMenu, ContainerButton, NavL
 
 export const Menu = () => {
     const [isOpen, setIsOpen] = useState(false)
-    const [menuItemSelected, setMenuItemSelected] = useState()
-
+    
     const handleOpenMenu = () => {
         setIsOpen(!isOpen)
 
@@ -17,7 +16,12 @@ export const Menu = () => {
     }
 
     const handleNavigateMenu = (menuItems: IMenuItems['items']) => {
-        console.log(menuItems, 'menuItems') 
+
+        const element = document.getElementById(menuItems)
+        if(element) {
+            handleOpenMenu()
+            element.scrollIntoView({ behavior: 'smooth' })
+        }
     }
 
     return (
@@ -31,7 +35,7 @@ export const Menu = () => {
         </MenuContainer>
         <ContainerMenu isOpen={isOpen}>
             <ContainerButton isOpen={isOpen}>
-                <Tab onClick={() => handleNavigateMenu('Profile')}>Projects</Tab>
+                <Tab onClick={() => handleNavigateMenu('Profile')}>Profile</Tab>
                 <Tab onClick={() => handleNavigateMenu('AboutMe')}>About me</Tab>
                 <Tab onClick={() => handleNavigateMenu('Experiences')}>Experiences</Tab>
             </ContainerButton>
