@@ -11,6 +11,10 @@ export const Container = styled.div`
     max-width: 1700px;
     margin: auto;
     height: 100%;
+
+    h2 {
+        padding-top: 0.5rem;
+    }
 `
 
 export const Content = styled.div`
@@ -79,6 +83,32 @@ export const ImageContainer = styled.div`
 `;
 
 export const ExperiencesContainer = styled.div``
+
+export const PostsContainer = styled.div`
+    width: inherit;
+    margin-top: 12rem;
+`
+
+export const Post = styled.div`
+    margin-bottom: 2rem;
+    cursor: pointer;
+    transition: all 0.25s;
+    
+    h5 {
+        font-size: 2rem;
+        font-weight: 700;
+        margin-bottom: 0.25rem;
+    }
+
+    h5:hover {
+        filter: brightness(80%);
+    }
+
+    > span {
+        font-size: 1rem;
+        font-weight: 400;
+    }
+`
 
 export const AboutMe = styled.div`
     margin-top: 12rem;

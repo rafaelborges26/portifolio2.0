@@ -4,6 +4,7 @@ export interface IMenuItems {
     | 'Experiences'
     | 'AboutMe'
     | 'Contact'
+    | 'Blog'
 }
 
 export interface IMenuStyles {

@@ -1,5 +1,4 @@
 import { useState } from 'react'
-import { MenuItems } from '@/constants/Menu'
 import { Tab } from '@/components/Atoms'
 import { setScroll } from '@/utils/scrollTo'
 import { IMenuItems } from './interfaces'
@@ -40,8 +39,9 @@ export const Menu = () => {
         <ContainerMenu isOpen={isOpen}>
             <ContainerButton isOpen={isOpen}>
                 <Tab onClick={() => handleNavigateMenu('Profile')}>Profile</Tab>
-                <Tab onClick={() => handleNavigateMenu('AboutMe')}>About me</Tab>
                 <Tab onClick={() => handleNavigateMenu('Experiences')}>Experiences</Tab>
+                <Tab onClick={() => handleNavigateMenu('Blog')}>Blog</Tab>
+                <Tab onClick={() => handleNavigateMenu('AboutMe')}>About me</Tab>
                 <Tab onClick={() => handleNavigateMenu('Contact')}>Contact</Tab>
             </ContainerButton>
         </ContainerMenu>
