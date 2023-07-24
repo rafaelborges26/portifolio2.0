@@ -1,6 +1,7 @@
 import { useState } from 'react'
 import { MenuItems } from '@/constants/Menu'
 import { Tab } from '@/components/Atoms'
+import { setScroll } from '@/utils/scrollTo'
 import { IMenuItems } from './interfaces'
 import { MenuContainer, Scratchs, Scratcht, ContainerMenu, ContainerButton, NavLayer } from './styles'
 
@@ -10,9 +11,12 @@ export const Menu = () => {
     const handleOpenMenu = () => {
         setIsOpen(!isOpen)
 
-        isOpen
-        ? (document.body.style.overflow = 'auto')
-        : (document.body.style.overflow = 'hidden')
+        if(isOpen){
+            document.body.style.overflow = 'auto';
+        } else {
+            document.body.style.overflow = 'hidden'
+            setScroll(0)
+        }
     }
 
     const handleNavigateMenu = (menuItems: IMenuItems['items']) => {
@@ -38,6 +42,7 @@ export const Menu = () => {
                 <Tab onClick={() => handleNavigateMenu('Profile')}>Profile</Tab>
                 <Tab onClick={() => handleNavigateMenu('AboutMe')}>About me</Tab>
                 <Tab onClick={() => handleNavigateMenu('Experiences')}>Experiences</Tab>
+                <Tab onClick={() => handleNavigateMenu('Contact')}>Contact</Tab>
             </ContainerButton>
         </ContainerMenu>
         </>

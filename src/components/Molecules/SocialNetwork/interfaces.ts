@@ -1,7 +1,6 @@
 import { ILogo } from '@/components/Atoms/Logo/interfaces'
 
-export interface ICard extends ILogo {
+export interface ISocialNetwork extends ILogo {
     title: string
     description: string
-    labels: string[]
 }

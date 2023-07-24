@@ -3,6 +3,7 @@ export interface IMenuItems {
     | 'Profile'
     | 'Experiences'
     | 'AboutMe'
+    | 'Contact'
 }
 
 export interface IMenuStyles {

@@ -32,15 +32,6 @@ export const Header = styled.header`
     width: inherit;
 `
 
-export const ButtonHeader = styled.button`
-    background: transparent;
-    border: none;
-    color: ${Themes.colors.white600};
-
-    font-size: 1.5rem;
-    font-weight: 600;
-`
-
 export const Profile = styled.main`
     display: flex;
     align-items: center;
@@ -102,4 +93,11 @@ export const AboutMe = styled.div`
         font-size: 1.5rem;
         padding-bottom: 2rem;
     }
+`
+
+export const ContactContainer = styled.footer`
+    margin-top: 12rem;
+    display: flex;
+    flex-direction: column;
+    width: inherit;
 `

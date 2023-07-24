@@ -1,7 +1,8 @@
-import styled from 'styled-components'
+import styled, { css } from 'styled-components'
+import { ILogoStyles } from './interfaces'
 import { Themes } from '@/styles/themes'
 
-export const Container = styled.div`
+export const Container = styled.div<ILogoStyles>`
     height: 8rem;
     width: 8rem;
 
@@ -15,4 +16,12 @@ export const Container = styled.div`
         width: 3.5rem;
         height: 3.5rem;
     }
+
+    
+    ${props => props.variant === 'secondary' && css`
+        border-radius: 50%;
+        width: 6rem;
+        height: 6rem;
+        color: ${Themes.colors.blue900};;
+    `};
 `

@@ -7,7 +7,7 @@ import { ICard } from './interfaces'
 export const Card = ({ title, description, labels, descriptionImage, logoImage }:ICard) => {
     return (
         <Container>
-            <Logo logoImage={logoImage} descriptionImage={descriptionImage} />
+            <Logo logoImage={logoImage} descriptionImage={descriptionImage} variant='primary' />
             <Title>{title}</Title>
             <Description>{description}</Description>
             <ContainerLabel>

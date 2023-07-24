@@ -1,8 +1,10 @@
 import Image from 'next/image'
 import ImageProfile from '@/assets/images/profile2.jpg'
+import iconPago from '@/assets/icons/pagonxt.svg'
 import { MenuItems } from '@/constants/Menu'
 import { Experiences, Header } from '@/components/Organisms'
-import { Container, Content, ButtonHeader, Profile, DescriptionContainer, ImageContainer, ExperiencesContainer, AboutMe } from '../styles/pages'
+import { Contact } from '@/components/Organisms'
+import { Container, Content, Profile, DescriptionContainer, ImageContainer, ExperiencesContainer, AboutMe, ContactContainer } from '../styles/pages'
 
 
 export default function Home() {
@@ -35,6 +37,10 @@ export default function Home() {
             <p>{`I was born in Santos, Brazil, and in addition to my passion for coding, I also enjoy doing sports in my spare time. I am a person who deeply values communication, innovation and respect.`}</p>
             <p>{`I am always looking for new challenges and opportunities to continue learning and evolving in the field of technology. If you need help or have any questions, I'm here to help!`}</p>
           </AboutMe>
+          <ContactContainer>
+            <h2>Contact</h2>
+            <Contact />
+          </ContactContainer>
         </Content>
       </Container>
   )

@@ -2,9 +2,9 @@ import Image from 'next/image'
 import { ILogo } from './interfaces'
 import { Container } from './styles'
 
-export const Logo = ({ logoImage, descriptionImage }:ILogo) => {
+export const Logo = ({ logoImage, descriptionImage, variant }:ILogo) => {
     return (
-        <Container>
+        <Container variant={variant}>
             <Image src={logoImage} alt={descriptionImage} />
         </Container>
     )
