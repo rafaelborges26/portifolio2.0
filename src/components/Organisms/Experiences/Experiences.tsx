@@ -9,7 +9,7 @@ export const Experiences = () => {
             <h2>Experience:</h2>
         <Content>
             {experiences.map(exp => (
-                  <Card key={exp.id} title={exp.title} description={exp.description} labels={...exp.labels} descriptionImage={exp.logoDescription} logoImage={exp.logo} />
+                  <Card key={exp.id} title={exp.title} description={exp.description} labels={...exp.labels} descriptionImage={exp.logoDescription} logoImage={exp.logo} link={exp.link} />
             ))}
         </Content>
         </Container>

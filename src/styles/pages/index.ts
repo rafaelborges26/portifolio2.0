@@ -82,22 +82,30 @@ export const ImageContainer = styled.div`
     }
 `;
 
-export const ExperiencesContainer = styled.div``
+export const ExperiencesContainer = styled.div`
+    padding-top: 1rem;
+`
 
 export const PostsContainer = styled.div`
     width: inherit;
     margin-top: 12rem;
+    padding-top: 1rem;
 `
 
-export const Post = styled.div`
-    margin-bottom: 2rem;
+export const Post = styled.a`
     cursor: pointer;
     transition: all 0.25s;
+    color: ${Themes.colors.white300};
+    text-decoration: none;
     
     h5 {
         font-size: 2rem;
         font-weight: 700;
         margin-bottom: 0.25rem;
+    }
+
+    h5:nth-of-type(n + 1) {
+        margin-top: 2rem;
     }
 
     h5:hover {
@@ -112,6 +120,7 @@ export const Post = styled.div`
 
 export const AboutMe = styled.div`
     margin-top: 12rem;
+    padding-top: 1rem;
 
     h3 {
         font-size: 2rem;

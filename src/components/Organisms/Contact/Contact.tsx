@@ -6,7 +6,7 @@ export const Contact = () => {
     return (
         <Container>
             {socialNetwork.map(social => (
-                  <SocialNetwork key={social.id} title={social.title} description={social.description} descriptionImage={social.logoDescription} logoImage={social.logo} />
+                  <SocialNetwork key={social.id} title={social.title} description={social.description} descriptionImage={social.logoDescription} link={social.link} logoImage={social.logo} />
             ))}
         </Container>
     )
