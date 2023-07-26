@@ -65,14 +65,24 @@ export const ContainerMenu = styled.div<IMenuStyles>`
   right: 0;
   z-index: 1;
   width: 0%;
-  transition: all 0.25s ease;
+  transition: width 0.25s ease;
   background: ${Themes.colors.blue600};
   z-index: 3;
 
   height: 100%;
 
+  @media (max-width: ${Themes.breakPoints.ipadPro}) {
+      transition: opacity 0.25s ease;
+      opacity: 0;
+  }
+
   ${props => props.isOpen && css`
         width: 30%;
+        
+        @media (max-width: ${Themes.breakPoints.ipadPro}) {
+          width: 50%;
+          opacity: 1;
+        }
   `};
 `
 

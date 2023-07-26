@@ -14,16 +14,25 @@ export const Container = styled.a`
         cursor: pointer;
         text-decoration: none;
 
+        
+    @media (max-width: ${Themes.breakPoints.ipad}) {
+        max-width: 24rem;
+    }
 `
 
 export const Title = styled.h6`
     font-size: 1.25rem;
     margin: 2rem 0;
+
+    @media (max-width: ${Themes.breakPoints.ipad}) {
+        font-size: 1.5rem;
+    }
 `
 
 export const Description = styled.p`
     font-size: 1rem;
     text-align: center;
+
 `
 
 export const ContainerLabel = styled.div`

@@ -11,10 +11,6 @@ export const Container = styled.div`
     max-width: 1700px;
     margin: auto;
     height: 100%;
-
-    h2 {
-        padding-top: 0.5rem;
-    }
 `
 
 export const Content = styled.div`
@@ -26,6 +22,13 @@ export const Content = styled.div`
     width: 100%;
     padding: 0 8rem;
 
+    @media (max-width: ${Themes.breakPoints.notebook}) {
+        padding: 0 2rem;
+    }
+
+    @media (max-width: ${Themes.breakPoints.ipad}) {
+        padding: 0 1.2rem;
+    }
 `;
 
 export const Header = styled.header`
@@ -40,8 +43,13 @@ export const Profile = styled.main`
     display: flex;
     align-items: center;
     justify-content: center;
-    height: 44rem;
+    height: 90vh;
     width: inherit;
+
+    @media (max-width: ${Themes.breakPoints.ipadPro}) {
+        flex-direction: column-reverse;
+        margin-top: 5rem;
+    }
 `
 
 
@@ -67,6 +75,27 @@ export const DescriptionContainer = styled.div`
         font-weight: 700;
         color: ${Themes.colors.gray300};
     }
+
+    
+    @media (max-width: ${Themes.breakPoints.ipadPro}) {
+        margin-top: 2.5rem;
+        justify-content: flex-start;
+
+        h1 {
+            font-size: 3rem;
+        }
+    }
+
+    @media (max-width: ${Themes.breakPoints.mediumMobile}) {
+
+        h1 {
+            font-size: 2rem;
+        }
+
+        span {
+            font-size: 0.85rem;
+        }
+    }
 `
 
 export const ImageContainer = styled.div`
@@ -79,6 +108,20 @@ export const ImageContainer = styled.div`
         height: 15.625rem;
         width: 15.625rem;
         border-radius: 50%;
+    }
+
+    @media (max-width: ${Themes.breakPoints.ipadPro}) {
+        img {
+            height: 20rem;
+            width: 20rem;
+        }
+    }
+
+    @media (max-width: ${Themes.breakPoints.mediumMobile}) {
+        img {
+            height: 16rem;
+            width: 16rem;
+        }
     }
 `;
 

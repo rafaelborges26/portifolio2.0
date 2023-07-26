@@ -52,7 +52,6 @@ export default function Home() {
             <p>{`I am constantly looking for new challenges and opportunities to keep learning and evolving in the field of technology. So if you need help or have any questions, I'm here to help!`}</p>
           </AboutMe>
           <ContactContainer id={MenuItems.CONTACT}>
-            <h2>Contact</h2>
             <Contact />
           </ContactContainer>
         </Content>

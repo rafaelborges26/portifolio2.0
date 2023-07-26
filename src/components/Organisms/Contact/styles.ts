@@ -10,4 +10,13 @@ export const Container = styled.div`
     background: ${Themes.colors.gray600};
     border-radius: 2rem;
     padding: 2rem;
+
+    
+    @media (max-width: ${Themes.breakPoints.mobile}) {
+        column-gap: 0.5rem;
+        position: absolute;
+        margin: auto;
+        right: 10px;
+        left: 10px;
+    }
 `

@@ -23,5 +23,27 @@ export const Container = styled.div<ILogoStyles>`
         width: 6rem;
         height: 6rem;
         color: ${Themes.colors.blue900};;
+
+        @media (max-width: ${Themes.breakPoints.ipad}) {
+
+            width: 4rem;
+            height: 4rem;
+
+            img {
+                width: 2rem;
+                height: 2rem;
+            }
+        }
+
+        @media (max-width: ${Themes.breakPoints.mobile}) {
+
+            width: 3rem;
+            height: 3rem;
+
+            img {
+                width: 1.75rem;
+                height: 1.75rem;
+            }
+        }
     `};
 `

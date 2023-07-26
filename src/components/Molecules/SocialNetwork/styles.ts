@@ -21,4 +21,21 @@ export const Container = styled.a`
         font-weight: 400;
         color: ${Themes.colors.white300};
     }
+
+    
+    @media (max-width: ${Themes.breakPoints.ipadPro}) {
+        span {
+            font-size: 1rem;
+        }
+
+        p {
+            display: none;
+        }
+    }
+
+    @media (max-width: ${Themes.breakPoints.ipadPro}) {
+        span {
+            font-size: 0.75rem;
+        }
+    }
 `

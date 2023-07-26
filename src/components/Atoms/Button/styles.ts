@@ -17,4 +17,10 @@ export const Container = styled.button<IButtonStyles>`
         color: ${Themes.colors.blue900};
         background-color: ${Themes.colors.white600};
     `};
+
+    @media (max-width: ${Themes.breakPoints.mediumMobile}) {
+        font-size: 1rem;
+    }
+
+
 `
