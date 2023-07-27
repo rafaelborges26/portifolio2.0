@@ -21,10 +21,10 @@ export default function Home() {
           <Profile id={MenuItems.PROFILE}>
           <DescriptionContainer>
             <h1>
-              Hello, I’m Rafael Borges
+              Hello! &nbsp;I´m a Brazilian software engineer
             </h1>
-            <span>Software Engineer, Frontend Developer and</span>
-            <span>Graduated in Information Systems</span>
+            <span>Frontend Developer</span>
+            <span>with degree in Information Systems.</span>
           </DescriptionContainer>
             <ImageContainer>
               <Image src={ImageProfile} alt="Rafael Borges" />

@@ -1,15 +1,8 @@
 import styled from "styled-components";
 import { Themes } from '@/styles/themes'
 
-export const Layer = styled.div`
-width: 100vw;
-height: 100vh;
-background: red;
-`;
-
 export const Container = styled.div`
     max-width: 1700px;
-    margin: auto;
     height: 100%;
 `
 
@@ -39,11 +32,11 @@ export const Header = styled.header`
     width: inherit;
 `
 
-export const Profile = styled.div`
+export const Profile = styled.section`
     display: flex;
     align-items: center;
     justify-content: center;
-    height: 90%;
+    min-height: 100vh;
     width: inherit;
 
     @media (max-width: ${Themes.breakPoints.ipadPro}) {
@@ -82,14 +75,15 @@ export const DescriptionContainer = styled.div`
         justify-content: flex-start;
 
         h1 {
-            font-size: 3rem;
+            font-size: 2.5rem;
         }
     }
 
     @media (max-width: ${Themes.breakPoints.mediumMobile}) {
+        margin-top: 0;
 
         h1 {
-            font-size: 2rem;
+            font-size: 1.5rem;
         }
 
         span {
@@ -119,20 +113,14 @@ export const ImageContainer = styled.div`
 
     @media (max-width: ${Themes.breakPoints.mediumMobile}) {
         img {
-            height: 16rem;
-            width: 16rem;
+            height: 12rem;
+            width: 12rem;
         }
     }
 `;
 
 export const ExperiencesContainer = styled.div`
     padding-top: 1rem;
-    margin-top: 12rem;
-
-    
-    @media (max-width: ${Themes.breakPoints.mobile}) {
-        margin-top: 6rem;
-    }
 `
 
 export const PostsContainer = styled.div`
