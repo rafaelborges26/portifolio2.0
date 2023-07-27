@@ -43,7 +43,7 @@ export const Profile = styled.div`
     display: flex;
     align-items: center;
     justify-content: center;
-    height: 90vh;
+    height: 90%;
     width: inherit;
 
     @media (max-width: ${Themes.breakPoints.ipadPro}) {
