@@ -10,9 +10,9 @@ import { setScroll } from '@/utils/scrollTo'
 
 export default function Home() {
 
-  //useEffect(() => {
-  //  setScroll(0)
-  //},[])
+  useEffect(() => {
+    setScroll(0)
+  },[])
 
   return (
       <Container>

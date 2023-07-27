@@ -9,6 +9,7 @@ export const Container = styled.button`
     font-size: 2rem;
     font-weight: 600;
     margin: 0.5rem 0;
+    color: ${Themes.colors.black};
 
     cursor: pointer;
 
