@@ -49,12 +49,15 @@ export const Scratcht = styled.div<IMenuStyles>`
   `};
 
   ${props => props.isOpen && props.positionTop && css`
-    transform: rotate(45deg);  
-    top: 0;
+    transform: rotate(45deg);
   `};
 
   ${props => props.isOpen && !props.positionTop && css`
     transform: rotate(-45deg);  
+  `};
+
+  ${props => props.isOpen && css` 
+    background: ${Themes.colors.black};
     top: 0;
   `};
 `
@@ -66,7 +69,7 @@ export const ContainerMenu = styled.div<IMenuStyles>`
   z-index: 1;
   width: 0%;
   transition: width 0.25s ease;
-  background: ${Themes.colors.blue600};
+  background: ${Themes.colors.white300};
   z-index: 3;
 
   height: 100%;
@@ -78,7 +81,7 @@ export const ContainerMenu = styled.div<IMenuStyles>`
 
   ${props => props.isOpen && css`
         width: 30%;
-        
+
         @media (max-width: ${Themes.breakPoints.ipadPro}) {
           width: 50%;
           opacity: 1;

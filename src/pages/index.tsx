@@ -1,6 +1,5 @@
 import Image from 'next/image'
 import ImageProfile from '@/assets/images/profile2.jpg'
-import iconPago from '@/assets/icons/pagonxt.svg'
 import { MenuItems } from '@/constants/Menu'
 import { Experiences, Header } from '@/components/Organisms'
 import { Contact } from '@/components/Organisms'
@@ -9,12 +8,11 @@ import { linksUrls } from '@/utils/links'
 import { useEffect } from 'react'
 import { setScroll } from '@/utils/scrollTo'
 
-
 export default function Home() {
-  
-  useEffect(() => {
-    setScroll(0)
-  },[])
+
+  //useEffect(() => {
+  //  setScroll(0)
+  //},[])
 
   return (
       <Container>
