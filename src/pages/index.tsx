@@ -6,9 +6,15 @@ import { Experiences, Header } from '@/components/Organisms'
 import { Contact } from '@/components/Organisms'
 import { Container, Content, Profile, DescriptionContainer, ImageContainer, ExperiencesContainer, PostsContainer, Post, AboutMe, ContactContainer } from '../styles/pages'
 import { linksUrls } from '@/utils/links'
+import { useEffect } from 'react'
+import { setScroll } from '@/utils/scrollTo'
 
 
 export default function Home() {
+  
+  useEffect(() => {
+    setScroll(0)
+  },[])
 
   return (
       <Container>
