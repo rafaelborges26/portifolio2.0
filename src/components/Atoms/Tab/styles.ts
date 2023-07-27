@@ -11,4 +11,12 @@ export const Container = styled.button`
     margin: 0.5rem 0;
 
     cursor: pointer;
+
+    @media (max-width: ${Themes.breakPoints.mobile}) {
+        font-size: 1.5rem;
+    }
+
+    @media (max-width: ${Themes.breakPoints.mediumMobile}) {
+        font-size: 1rem;
+    }
 `

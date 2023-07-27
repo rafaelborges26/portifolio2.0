@@ -18,7 +18,7 @@ export const socialNetwork = [{
     description: '(13) 996540962',
     logo: IconPhone,
     logoDescription: 'Telefone',
-    link: 'https://www.linkedin.com/in/rafael-bernardino-borges'
+    link: 'tel:13996540962'
 },
 {
     id: 2,

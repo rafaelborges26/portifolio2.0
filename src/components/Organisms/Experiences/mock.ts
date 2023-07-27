@@ -74,7 +74,7 @@ export const experiences = [{
 {
     id: 6,
     title: 'Unidos Carreira',
-    description: `I helped with the development of the website for the project: Unidos Carreia, which works as a group for vacancies and support for people in professional vulnerability.`,
+    description: `I helped with the development of the website for the project: Unidos Carreira, which works as a group for vacancies and support for people in professional vulnerability.`,
     labels: ['Javascript', 'PHP', 'HTML', 'CSS'],
     logo: IconUnidos,
     logoDescription: 'Unidos Carreira',

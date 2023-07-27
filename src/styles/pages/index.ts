@@ -127,12 +127,22 @@ export const ImageContainer = styled.div`
 
 export const ExperiencesContainer = styled.div`
     padding-top: 1rem;
+    margin-top: 12rem;
+
+    
+    @media (max-width: ${Themes.breakPoints.mobile}) {
+        margin-top: 6rem;
+    }
 `
 
 export const PostsContainer = styled.div`
     width: inherit;
     margin-top: 12rem;
     padding-top: 1rem;
+    
+    @media (max-width: ${Themes.breakPoints.mobile}) {
+        margin-top: 6rem;
+    }
 `
 
 export const Post = styled.a`
@@ -159,6 +169,21 @@ export const Post = styled.a`
         font-size: 1rem;
         font-weight: 400;
     }
+
+    
+    @media (max-width: ${Themes.breakPoints.mobile}) {
+        h5 {
+            font-size: 1.5rem;
+        }
+
+        h5:nth-of-type(n + 1) {
+            margin-top: 1rem;
+        }
+
+        span {
+            font-size: 1rem;
+        }
+    }
 `
 
 export const AboutMe = styled.div`
@@ -175,6 +200,22 @@ export const AboutMe = styled.div`
         font-size: 1.5rem;
         padding-bottom: 2rem;
     }
+
+    @media (max-width: ${Themes.breakPoints.mobile}) {
+
+        h3 {
+            font-size: 1.5rem;
+            font-weight: 600;
+            margin-bottom: 1.5rem;
+        }
+
+        p {
+            font-size: 1rem;
+            padding-bottom: 1rem;
+        }
+
+        margin-top: 6rem;
+    }
 `
 
 export const ContactContainer = styled.footer`
@@ -182,4 +223,8 @@ export const ContactContainer = styled.footer`
     display: flex;
     flex-direction: column;
     width: inherit;
+
+    @media (max-width: ${Themes.breakPoints.mobile}) {
+        margin-top: 6rem;
+    }
 `

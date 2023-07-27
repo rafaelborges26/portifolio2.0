@@ -27,6 +27,7 @@ export default function Home() {
             </ImageContainer>
           </Profile>
           <ExperiencesContainer id={MenuItems.EXPERIENCES}>
+            <h2>Experiences</h2>
             <Experiences />
           </ExperiencesContainer>
           <PostsContainer id={MenuItems.BLOG}>
