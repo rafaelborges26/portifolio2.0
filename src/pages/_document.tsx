@@ -12,6 +12,7 @@ export default function Document() {
       <meta property="og:url" content="Rafael Borges" />
       <meta property="og:image" content="/banner.PNG" />
 
+      <link rel="icon" href="/favicon.ico" />
       <link rel="preconnect" href="https://fonts.googleapis.com" />
       <link rel="preconnect" href="https://fonts.gstatic.com" />
       <link
