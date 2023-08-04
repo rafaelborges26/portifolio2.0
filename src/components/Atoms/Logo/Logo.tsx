@@ -5,7 +5,7 @@ import { Container } from './styles'
 export const Logo = ({ logoImage, descriptionImage, variant }:ILogo) => {
     return (
         <Container variant={variant}>
-            <Image src={logoImage} alt={descriptionImage} />
+            <Image src={logoImage} alt={descriptionImage} height={100} width={100} />
         </Container>
     )
 }

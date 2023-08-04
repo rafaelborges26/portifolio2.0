@@ -102,6 +102,9 @@ export const ImageContainer = styled.div`
         height: 15.625rem;
         width: 15.625rem;
         border-radius: 50%;
+        
+        object-fit: cover;
+        object-position: top;
     }
 
     @media (max-width: ${Themes.breakPoints.ipadPro}) {

@@ -27,7 +27,7 @@ export default function Home() {
             <span>with degree in Information Systems.</span>
           </DescriptionContainer>
             <ImageContainer>
-              <Image src={ImageProfile} alt="Rafael Borges" />
+              <Image src={ImageProfile} alt="Rafael Borges" height={150} width={150} />
             </ImageContainer>
           </Profile>
           <ExperiencesContainer id={MenuItems.EXPERIENCES}>
