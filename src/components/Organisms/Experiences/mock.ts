@@ -5,6 +5,7 @@ import IconPagonxt from '@/assets/icons/pagonxt.svg'
 import IconBuy from '@/assets/icons/buy.svg'
 import IconGoBarber from '@/assets/icons/goBarber.svg'
 import IconUnidos from '@/assets/icons/unidos.png'
+import IconDefault from '@/assets/icons/logoDefault.png'
 import { linksUrls } from '@/utils/links'
 
 
@@ -67,7 +68,7 @@ export const experiences = [{
     title: 'Quiz',
     description: `The project was developed with the aim of providing a fun game for couples or friends, allowing them to discover how much they really know each other.`,
     labels: ['Typescript', 'React', 'Design System', 'Atomic Design'],
-    logo: IconGoBarber,
+    logo: IconDefault,
     logoDescription: 'Quiz',
     link: linksUrls.quiz
 },
@@ -79,6 +80,16 @@ export const experiences = [{
     logo: IconUnidos,
     logoDescription: 'Unidos Carreira',
     link: linksUrls.unidosCarreira
-}
+},
+{
+    id: 7,
+    title: 'Pomodoro',
+    description: `Project for to timmer and list completed and interrupted tasks. Following the course of rocketseat bootcamp but add more functionalities.`,
+    labels: ['Typescript', 'React', 'HTML', 'CSS'],
+    logo: IconDefault,
+    logoDescription: 'Pomodoro',
+    link: linksUrls.pomodoro
+},
+
 
 ]

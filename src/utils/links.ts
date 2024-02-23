@@ -8,5 +8,6 @@ export const linksUrls = {
     buyManagement: 'https://buy-management.web.app',
     goBarber: 'https://gobarber.rafaelborges.dev.br',
     quiz: 'https://quiz.rafaelborges.dev.br',
-    unidosCarreira: 'https://unidoscarreira.com.br/unidas-carreira'
+    unidosCarreira: 'https://unidoscarreira.com.br/unidas-carreira',
+    pomodoro: 'https://pomodoro.rafaelborges.dev.br'
 }

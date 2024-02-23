@@ -1,5 +1,3 @@
-import Image from 'next/image'
-import IconBmg from '@/assets/icons/bmg.svg'
 import { Container, Title, Description, ContainerLabel } from './styles'
 import { Label, Logo } from '@/components/Atoms'
 import { ICard } from './interfaces'
