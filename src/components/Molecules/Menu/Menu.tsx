@@ -38,11 +38,11 @@ export const Menu = () => {
         </MenuContainer>
         <ContainerMenu isOpen={isOpen}>
             <ContainerButton isOpen={isOpen}>
-                <Tab onClick={() => handleNavigateMenu('Profile')}>Profile</Tab>
-                <Tab onClick={() => handleNavigateMenu('Experiences')}>Experiences</Tab>
+                <Tab onClick={() => handleNavigateMenu('Profile')}>Perfil</Tab>
+                <Tab onClick={() => handleNavigateMenu('Experiences')}>Experiências</Tab>
                 <Tab onClick={() => handleNavigateMenu('Blog')}>Blog</Tab>
-                <Tab onClick={() => handleNavigateMenu('AboutMe')}>About me</Tab>
-                <Tab onClick={() => handleNavigateMenu('Contact')}>Contact</Tab>
+                <Tab onClick={() => handleNavigateMenu('AboutMe')}>Sobre mim</Tab>
+                <Tab onClick={() => handleNavigateMenu('Contact')}>Contato</Tab>
             </ContainerButton>
         </ContainerMenu>
         </>

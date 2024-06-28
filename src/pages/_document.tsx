@@ -5,10 +5,10 @@ export default function Document() {
     <Html lang="en">
       <Head>
       <meta charSet="UTF-8" />
-      <meta name="description" content="Hello! I´m a Brazilian software engineer"/>
+      <meta name="description" content="Olá! Sou um desenvolvedor de software brasileiro"/>
 
       <meta property="og:title" content="Rafael Borges" />
-      <meta property="og:description" content="Hello! I´m a Brazilian software engineer"/>
+      <meta property="og:description" content="Olá! Sou um desenvolvedor de software brasileiro"/>
       <meta property="og:url" content="Rafael Borges" />
       <meta property="og:image" content="/banner.PNG" />
 

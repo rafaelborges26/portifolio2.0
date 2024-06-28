@@ -21,21 +21,21 @@ export default function Home() {
           <Profile id={MenuItems.PROFILE}>
           <DescriptionContainer>
             <h1>
-              Hello! &nbsp;I´m a Brazilian software engineer
+              Olá! &nbsp;Sou um desenvolvedor de software brasileiro
             </h1>
-            <span>Frontend Developer</span>
-            <span>with degree in Information Systems.</span>
+            <span>Desenvolvedor Frontend</span>
+            <span>com graduação em Sistemas de Informação.</span>
           </DescriptionContainer>
             <ImageContainer>
               <Image src={ImageProfile} alt="Rafael Borges" height={150} width={150} />
             </ImageContainer>
           </Profile>
           <ExperiencesContainer id={MenuItems.EXPERIENCES}>
-            <h2>Experiences</h2>
+            <h2>Experiências</h2>
             <Experiences />
           </ExperiencesContainer>
           <PostsContainer id={MenuItems.BLOG}>
-          <h2>Latest posts</h2>
+          <h2>Últimas postagens</h2>
           <Post href={linksUrls.postConfig} target="_blank" rel="noopener noreferrer">
             <h5>How to create a dynamic, smooth-scrolling menu</h5>
             <span>To achieve this effect, you can implement a container div that splits the screen into sections with Id in each element...</span>
@@ -46,15 +46,15 @@ export default function Home() {
           </Post>
           </PostsContainer>
           <AboutMe id={MenuItems.ABOUTME}>
-            <h2>About me</h2>
-            <h3>I work with what I love</h3>
-            <p>{`I'm a coding enthusiast with a thirst for continuous growth. Since 2016, I've been dedicating myself to learning and constantly improving my skills.`}</p>
-            <p>{`In 2021, I completed my training in information systems and, since then, I have deepened myself further in development, taking relevant courses, with emphasis on the Rocketseat course, which provided a notable advance in my capabilities.`}</p>
-            <p>{`From 2018, I had the opportunity to enter the job market, where I sought exceptional solutions to solve problems efficiently.`}</p>
-            <p>{`My experience focuses on front-end development, with a special focus on usability and user interface. In addition, I have solid knowledge in web standards, security, testing, analytics and API integrations.`}</p>
-            <p>{`Over time, I've developed a number of interesting projects, some of which are available on my GitHub. Among them, I highlight "buy-management", a purchase manager that I created using React as front-end framework and Firebase as database service. This project offers custom functionality, with features carefully designed to meet customer needs.`}</p>
-            <p>{`Born in Santos, Brazil, I have a passion for both programming and playing sports in my spare time. I am someone who deeply values communication, innovation and respect.`}</p>
-            <p>{`I am constantly looking for new challenges and opportunities to keep learning and evolving in the field of technology. So if you need help or have any questions, I'm here to help!`}</p>
+            <h2>Sobre mim</h2>
+            <h3>Eu trabalho com o que amo</h3>
+            <p>{`Sou um entusiasta de codificação com uma sede insaciável por crescimento contínuo. Desde 2016, venho me dedicando a aprender e aprimorar constantemente minhas habilidades.`}</p>
+            <p>{`Em 2021, concluí minha formação em Sistemas de Informação e, desde então, tenho me aprofundado ainda mais no desenvolvimento, participando de cursos relevantes, como o curso da Rocketseat, que proporcionou um avanço notável nas minhas capacidades.`}</p>
+            <p>{`Desde 2018, venho atuando no mercado de trabalho, onde sempre busco soluções excepcionais para resolver problemas de forma eficiente.`}</p>
+            <p>{`Minha experiência concentra-se no desenvolvimento front-end, com um foco especial em usabilidade e interface de usuário. Além disso, possuo sólidos conhecimentos em padrões web, segurança, testes, análises e integrações de API.`}</p>
+            <p>{`Ao longo do tempo, desenvolvi uma série de projetos interessantes, alguns dos quais estão disponíveis no meu GitHub. Dentre eles, destaco o “buy-management”, um gerenciador de compras que criei utilizando React como framework front-end e Firebase como serviço de banco de dados. Este projeto oferece funcionalidades customizadas, com recursos cuidadosamente projetados para atender às necessidades do cliente.`}</p>
+            <p>{`Nascido em Santos, Brasil, tenho paixão por programar e praticar esportes nas horas vagas. Valorizo profundamente a comunicação, a inovação e o respeito.`}</p>
+            <p>{`Estou constantemente em busca de novos desafios e oportunidades para continuar aprendendo e evoluindo na área de tecnologia. Se precisar de ajuda ou tiver alguma dúvida, estou à disposição para ajudar!`}</p>
           </AboutMe>
           <ContactContainer id={MenuItems.CONTACT}>
             <Contact />
