@@ -9,5 +9,7 @@ export const linksUrls = {
     goBarber: 'https://gobarber.rafaelborges.dev.br',
     quiz: 'https://quiz.rafaelborges.dev.br',
     unidosCarreira: 'https://unidoscarreira.com.br/unidas-carreira',
-    pomodoro: 'https://pomodoro.rafaelborges.dev.br'
+    pomodoro: 'https://pomodoro.rafaelborges.dev.br',
+    dtMoney: 'https://dt-money-4d508.web.app/'
+
 }

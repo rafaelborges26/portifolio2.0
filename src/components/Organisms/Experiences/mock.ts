@@ -90,6 +90,15 @@ export const experiences = [{
     logoDescription: 'Pomodoro',
     link: linksUrls.pomodoro
 },
+{
+    id: 8,
+    title: 'DTMoney',
+    description: `Project for to organize and calculate pays and bills. Following the layout from course of rocketseat bootcamp but add more functionalities.`,
+    labels: ['Typescript', 'React', 'Firebase'],
+    logo: IconDefault,
+    logoDescription: 'DTMoney',
+    link: linksUrls.dtMoney
+},
 
 
 ]
